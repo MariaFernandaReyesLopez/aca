@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>ACA</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet" href="./style.css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+            
+    </head>
+    <body>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white;">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/LOGOORIGINAL.jpg" width="210" height="90" alt="LOGOORIGINAL">
+                        </a>
+            
+                            <ul class="nav">
+                            <li class="nav-item active">
+                                <a class="nav-link nav2" href="page.html">Inicio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link nav2" href="funcion-aca.html">¿Cómo funciona ACA?</a>
+                            </li>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                      
+                                      <li class="nav-item dropdown active">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Donar
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="donar.html">¿Qué es una donación?</a>
+                                            <a class="dropdown-item" href="especie.html">Donación en especie</a>
+                                            <a class="dropdown-item" href="monetaria.html">Donación monetaria</a>
+                                        </div>
+                                      </li>
+                                    </ul>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link nav2" href="voluntariado.html">Voluntariado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav2" href="beneficiarios.html">Beneficiarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav2" href="#contacto">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav2" href="login.html">Iniciar sesión</a>
+                            </li>
+                            
+                            </ul>
+                </nav>
+        <div class="cover2 d-flex justify-content-center align-items-center flex-column">
+            <img src="/img/28.jpg" width="350" height="250" alt="caridad" class="rounded-pill">
+            <h1>
+                PRE-REGISTRO
+            </h1>
+        </div>
+        
+        <!-- PARA HACER LO DE REGISTRO -->
+        <section>
+            <div class="container mt-5 mb-5">
+                <div class="col-12 col-sm-6 col-lg-5">
+                    <h3>
+                        ¡Registrate ahora!
+                    </h3>
+                    <p>
+                        Registrarte y se parte de este proyecto.
+                    </p>
+                </div>
+            <form action="pre-registro.php" method="POST">
+                <label for="nombre">NOMBRE COMPLETO</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <input type="text" id="1" name="nombre" class="form-control" placeholder="Escribe tu nombre completo"/><br>
+                    </div>
+                </div>
+                <label for="sexo">SEXO</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <div>
+                            <input type="text" id="2" name="sexo" class="form-control" placeholder="Escribe H(hombre) o M(mujer)">
+                        </div>
+                    </div>
+                </div><br>
+                <label for="estado">ESTADO CIVIL</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <input type="text" name="estado" id="6" class="form-control">
+                    </div>
+                </div><br>
+                <label for="integrantes">NÚMERO DE INTEGRANTES (solo cuenta a las personas que viven en tu hogar, incluyéndote)</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <input type="text" name="integrantes" id="5" class="form-control">
+                    </div>
+                </div><br>
+                <label for="ocupacion">OCUPACIÓN</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <input type="text" name="ocupacion" id="4" class="form-control">
+                    </div>
+                </div><br>
+                <label for="sueldo">SUELDO MENSUAL</label>
+                <div class="d-flex">
+                    <div class="flex-fill mr-2">
+                        <input type="text" name ="sueldo" id="3" class="form-control"/>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                <button type="submit" class="btn btn-outline-warning" onclick="alert('Información registrada correctamente!')">
+                    ENVIAR
+                </button>
+                </div>
+            </form>
+            </div>
+        </section>
+        <section>
+                <div class="container mt-5 mb-5 text-center" id="contacto">
+                <h2><span><strong>Información de Contacto</strong></span></h2><br>
+                    <address>
+                        <span class="address" style="text-align: center;">Bodega No.8 Central de Abastos
+                                                Bvld. Rojo Gómez S/N, Col. Cuesco C.P. 42080
+                                                Pachuca Hidalgo. México</span>
+                                                <br>
+                                                <br>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7493.369197792179!2d-98.7560408408621!3d20.10546722296604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109c55ae00673%3A0xd1d6a44d9c569988!2sBAMX%20HIDALGO%20-%20Banco%20de%20Alimentos%20del%20Centro%20del%20Estado%20de%20Hidalgo!5e0!3m2!1ses!2smx!4v1575695450434!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0 text-center" allowfullscreen=""></iframe>
+                                                <br>
+                        <span class="phone"><strong>Tel:</strong> (771) 714 2332</span><br>
+                        <span class="email"><strong>email:</strong> direccion@bapachuca.org.mx</span>
+                    </address>
+                </div>
+        </section>
+    </body>
+    </html>
